@@ -1,0 +1,253 @@
+/***** global *****/
+
+:root {
+    --bg-main: #2C3E50
+}
+
+/***** End global *****/
+
+
+/*~ nav bar styling *****/
+
+.my-nav {
+    background-color: var(--bg-main) !important;
+}
+
+.my-nav .navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.my-nav .my-ul {
+    font-weight: 700;
+}
+
+.my-nav .navbar-nav .nav-link.active {
+    background-color: #1ABC9C;
+    border-radius: .625rem;
+}
+
+/*~ End nav bar styling *****/
+
+
+/*~ home section *****/
+
+.home-section {
+    background-color: #1ABC9C;
+}
+
+.home-section .img-item {
+    width: 15%;
+}
+
+.home-section .caption h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.home-section .icon .inner-icon::after,
+.about .icon .inner-icon::after {
+    content: "";
+    background-color: white;
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.home-section .icon .inner-icon::before,
+.about .icon .inner-icon::before {
+    content: "";
+    background-color: white;
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+/*~End home section *****/
+
+/*~ about *****/
+
+.about {
+    background-color: #1ABC9C;
+    min-height: 80vh;
+}
+
+.about .title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/*~ End about *****/
+
+
+/*~ portfolio *****/
+
+.portfolio .title h2 {
+    color: var(--bg-main);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.portfolio .icon {
+    position: relative;
+}
+
+.portfolio .icon::after {
+    content: "";
+    background-color: var(--bg-main);
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.portfolio .icon::before {
+    content: "";
+    background-color: var(--bg-main);
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.portfolio .img-items .col-md-4 .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .img-items .col-md-4 .inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(26, 186, 159, 0.8), rgba(26, 186, 159, 0.8));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-size: 6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.portfolio .img-items .col-md-4 .inner:hover:after {
+    opacity: 1;
+}
+
+.portfolio .img-items .col-md-4 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 23;
+    color: transparent;
+    font-size: 6rem;
+    transform: translate(-50%, -50%);
+    transition: color 0.4s ease;
+}
+
+.portfolio .img-items .col-md-4:hover span {
+    color: white;
+}
+
+.popup{
+    position: fixed;
+    inset: 0;
+    background-color:rgba(36, 74, 123, 0.605);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.popup img{
+    max-width: 30%;
+}
+
+/*~ End portfolio *****/
+
+/*~ contact *****/ 
+
+.contact .title h2 {
+    color: var(--bg-main);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.contact .icon {
+    position: relative;
+}
+
+.contact .icon::after {
+    content: "";
+    background-color: var(--bg-main);
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.contact .icon::before {
+    content: "";
+    background-color: var(--bg-main);
+    width: 7%;
+    height: .25rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.contact .inputs input{
+    border: none;
+    box-shadow: none;
+}
+.contact .button button{
+    background-color: #1ABC9C;
+}
+
+/*~ End contact *****/
+
+
+/*~ footer *****/
+
+.footer {
+    background-color: var(--bg-main);
+}
+
+.footer .icons span {
+    border: 1px solid white;
+    padding: .1875rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-left: .625rem;
+    border-radius: 50%;
+}
+
+.copy-rights {
+    background-color: #1A252F;
+}
+
+/*~ End footer *****/
